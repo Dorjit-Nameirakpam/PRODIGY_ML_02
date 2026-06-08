@@ -4,7 +4,7 @@ from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 
-df = pd.read_csv("kclustersample.csv")
+df = pd.read_csv("retail_customer_segmentation_dataset.csv")
 
 features = [
     'Age',
