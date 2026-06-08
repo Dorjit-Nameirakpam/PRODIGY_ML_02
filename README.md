@@ -99,20 +99,6 @@ pip install -r requirements.txt
 python customer_segmentation.py
 ```
 
----
-
-## Output Screenshots
-
-### Elbow Method
-
-![Elbow Method](screenshots/elbow_method.png)
-
-### Customer Segmentation Visualization
-
-![Customer Segmentation](screenshots/cluster_visualization.png)
-
----
-
 ## Results
 
 The K-Means model successfully segments customers into meaningful groups based on spending habits and purchasing behavior. These segments can represent:
