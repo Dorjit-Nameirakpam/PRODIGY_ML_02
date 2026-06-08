@@ -1,4 +1,6 @@
 import pandas as pd
+import os
+os.makedirs("screenshots", exist_ok=True)
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
@@ -37,6 +39,7 @@ plt.title("Elbow Method")
 plt.xlabel("Number of Clusters")
 plt.ylabel("WCSS")
 plt.grid(True)
+plt.savefig("screenshots/elbow_method.png")
 plt.show()
 
 k = int(input("Enter optimal number of clusters: "))
@@ -65,6 +68,7 @@ plt.title("Customer Segmentation using K-Means")
 plt.xlabel("Principal Component 1")
 plt.ylabel("Principal Component 2")
 plt.colorbar(label="Cluster")
+plt.savefig("screenshots/cluster_visualization.png")
 plt.show()
 
 cluster_summary = df.groupby("Cluster")[features].mean()
